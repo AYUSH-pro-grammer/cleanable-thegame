@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://b8pk2tjqmhmg1"]
+
+[ext_resource type="Script" uid="uid://c4ie2v5u425hs" path="res://finish.gd" id="1_yp4eo"]
+[ext_resource type="Texture2D" uid="uid://5vtfsnt8rj81" path="res://finish/End (Pressed) (64x64).png" id="2_bt3yw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_se5xy"]
+atlas = ExtResource("2_bt3yw")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfp72"]
+atlas = ExtResource("2_bt3yw")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggktp"]
+atlas = ExtResource("2_bt3yw")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hd5p8"]
+atlas = ExtResource("2_bt3yw")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vthi"]
+atlas = ExtResource("2_bt3yw")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3y057"]
+atlas = ExtResource("2_bt3yw")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0hx7"]
+atlas = ExtResource("2_bt3yw")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2m2ul"]
+atlas = ExtResource("2_bt3yw")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wlb43"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_se5xy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xfp72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ggktp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hd5p8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vthi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3y057")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0hx7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2m2ul")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="finish" type="Node2D" unique_id=939334047]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1170777730]
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1150.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.18431373, 0.19607843, 0.18431373, 1)
+metadata/_edit_group_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1542444439]
+offset_left = 436.0
+offset_top = 380.0
+offset_right = 706.0
+offset_bottom = 461.0
+theme_override_font_sizes/font_size = 36
+text = "HOME"
+script = ExtResource("1_yp4eo")
+
+[node name="Label" type="Label" parent="." unique_id=1135600980]
+offset_left = 389.0
+offset_top = 158.0
+offset_right = 754.0
+offset_bottom = 274.0
+theme_override_font_sizes/font_size = 80
+text = "FINISHED"
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=23688950]
+texture_filter = 1
+position = Vector2(1043, 539)
+scale = Vector2(3.359375, 3.234375)
+sprite_frames = SubResource("SpriteFrames_wlb43")
+autoplay = "default"
+frame_progress = 0.9506576
+
+[node name="Sprite2D2" type="AnimatedSprite2D" parent="." unique_id=830391909]
+texture_filter = 1
+position = Vector2(108.00006, 540)
+scale = Vector2(3.359375, 3.234375)
+sprite_frames = SubResource("SpriteFrames_wlb43")
+autoplay = "default"
+frame_progress = 0.7257007
