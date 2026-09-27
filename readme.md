@@ -130,7 +130,7 @@ Screenshots
 
 Home Screen
 
-![Home](images/home.png)
+![Home](image/home.png)
 
 ---
 
