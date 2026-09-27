@@ -46,7 +46,7 @@ The game is set up from the beginning on a home screen where you can:
 - Start playing
 - See the "What Is This?" screen
 
-![Home Screen](images/home.png)
+![Home Screen](image/home.png)
 
 
 ---
